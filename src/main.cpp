@@ -8,11 +8,19 @@ const int white = 14;
 // times: how many blink cycles to do
 // onTime: how long the LED stays ON (and also how long it stays OFF, since delay(onTime) is used twice)
 void blink_led(int pin, int times, int onTime) {
+<<<<<<< HEAD
   for  (int x = 0; x < times; x++) {  // repeat blink sequence "times" times
     digitalWrite(pin, HIGH);
     delay(onTime);    // wait onTime milliseconds 
     digitalWrite(pin, LOW);
     delay(onTime);    // wait onTime milliseconds (creates equal ON/OFF timing)
+=======
+  for  (int x = 0; x < times; x++) {
+    digitalWrite(pin, HIGH);
+    delay(onTime);
+    digitalWrite(pin, LOW);
+    delay(onTime);
+>>>>>>> 72bc9c0665d778728be2664ca7d7bcd3e1425db7
   }
 }
 
